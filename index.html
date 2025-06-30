@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
       body {
         height: 100vh; /* full viewport height */
@@ -12,25 +12,28 @@
         font-family: 'Roboto', sans-serif;
         background-color: #1a1a1a;
         color: white;
+        flex-direction: column;
+        gap: 20px;
       }
-        .button-btn {
-          padding: 12px 24px;
-          color: #0ff;
-          background: #111;
-          border: 2px solid #0ff;
-          border-radius: 8px;
-          text-transform: uppercase;
-          font-weight: bold;
-          box-shadow: 0 0 10px #0ff;
-          transition: box-shadow 0.3s ease;
+      .button-btn {
+        padding: 12px 24px;
+        color: #cdaaff; /* soft purple text */
+        background: #2a1a3a; /* dark purple background */
+        border: 2px solid #cdaaff;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: inset 0 0 6px #cdaaff; /* softer inner glow */
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
       }
-        .button-btn:hover {
-          box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      .button-btn:hover {
+        box-shadow: inset 0 0 12px #cdaaff, inset 0 0 24px #cdaaff; /* subtle glow on hover */
       }
     </style>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>Hello World!</h1>
     <button class="button-btn">Vault of Secrets</button>
     <button class="button-btn">The Wraith Vault</button>
     <button class="button-btn">Chamber of Time</button>
